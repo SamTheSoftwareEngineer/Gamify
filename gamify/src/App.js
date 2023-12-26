@@ -1,10 +1,10 @@
-import Navbar from './components /Navbar';
-import LogoFront from './components /LogoFront';
+import NavBar from './components /NavBar';
+import InfoPage from './components /InfoPage';
 function App() {
   return (
     <div>
-    <LogoFront />
-     <Navbar />
+      <NavBar />
+      <InfoPage />
     </div>
   );
 }
