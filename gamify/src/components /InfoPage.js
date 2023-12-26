@@ -1,37 +1,48 @@
-import * as React from "react";
+import React from "react";
 import styled from "styled-components";
 
 function InfoPage() {
-  return <Div>
-    <Levelupyourreality>LEVEL UP YOUR REALITY.</Levelupyourreality>
-    <div>
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fgaming-keyboard&psig=AOvVaw18y6TbsBGtqby3mNGadY1A&ust=1703717731267000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCIDRsKWZroMDFQAAAAAdAAAAABAE" alt="keyboard">
-        </img>
-    </div>
-  </Div>;
+  return (
+    <StyledDiv>
+      <LevelUpYourReality>LEVEL UP YOUR REALITY.</LevelUpYourReality>
+      <CenterImage>
+        <img src="/Assets/keyboard-game.png" alt="keyboard" className="keyboard" />
+      </CenterImage>
+    </StyledDiv>
+  );
 }
 
-const Div = styled.div`
+const StyledDiv = styled.div`
   border-radius: 50px;
   border: 10px solid #d6700a;
   background-color: purple;
   display: flex;
   min-height: 811px;
   flex-direction: column;
-`
+  align-items: center;
+`;
 
-  const Levelupyourreality = styled.div`
+const LevelUpYourReality = styled.div`
   color: white;
-  align-self: center;
   font: 800 50px Inter, sans-serif;
-  @media (max-width: 991px) {
-  max-width: 100%;
-  font-size: 40px;
-  margin-top: 200px;
+  margin-top: 50px;
 
+  @media (max-width: 991px) {
+    font-size: 40px;
+    margin-top: 20px;
   }
 `;
 
+const CenterImage = styled.div`
+  max-width: 90%;
+  margin-top: 50px;
+  
+
+  .keyboard {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+`;
 
 export default InfoPage;
-
