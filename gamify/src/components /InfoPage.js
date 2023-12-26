@@ -8,6 +8,7 @@ function InfoPage() {
       <CenterImage>
         <img src="/Assets/keyboard-game.png" alt="keyboard" className="keyboard" />
       </CenterImage>
+      <div><button className="register-button">REGISTER</button></div>
     </StyledDiv>
   );
 }
@@ -43,6 +44,11 @@ const CenterImage = styled.div`
     height: auto;
     border-radius: 10px;
   }
-`;
 
+  .register-button {
+    background-color: #d6700a;
+    color: white;
+    border-radius: 10px;
+  }
+`;
 export default InfoPage;
