@@ -14,10 +14,10 @@ function InfoPage() {
       </StyledText>
 
       <StyledDiv2>
-      <Div2 href="register">
-        <Styledbutton href="/register">REGISTER</Styledbutton></Div2>
+      <Div2>
+        <Styledbutton a href="/register">REGISTER</Styledbutton></Div2>
       <Div3>
-        <Styledbutton href="/login">LOGIN</Styledbutton>
+        <Styledbutton a href="/login">LOGIN</Styledbutton>
       </Div3>
     </StyledDiv2>
       
@@ -94,6 +94,8 @@ const Styledbutton = styled.button`
   color: white;
   border: none;
   background: none;
+  font: 600 20px Inter, sans-serif;
+  padding: 16px 40px
 `;
 
 

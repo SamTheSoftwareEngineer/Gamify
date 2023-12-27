@@ -9,7 +9,6 @@ const Div = styled.div`
   border-radius: 20px;
 
   .container {
-  border-bottom: 5px solid black;
   min-height: 130px;
   flex-direction: column;
   }
