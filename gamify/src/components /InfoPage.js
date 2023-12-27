@@ -3,17 +3,29 @@ import styled from "styled-components";
 
 function InfoPage() {
   return (
-    <StyledDiv>
+    <StyledDiv1>
       <LevelUpYourReality>LEVEL UP YOUR REALITY.</LevelUpYourReality>
       <CenterImage>
         <img src="/Assets/keyboard-game.png" alt="keyboard" className="keyboard" />
       </CenterImage>
-      <div><button className="register-button">REGISTER</button></div>
-    </StyledDiv>
+      <StyledText> Discover a new way to level up your team's productivity and engagement.
+       <StyledText>Gamify is the platform that translates work into gaming.
+      </StyledText>
+      </StyledText>
+
+      <StyledDiv2>
+      <Div2 href="register">
+        <Styledbutton href="/register">REGISTER</Styledbutton></Div2>
+      <Div3>
+        <Styledbutton href="/login">LOGIN</Styledbutton>
+      </Div3>
+    </StyledDiv2>
+      
+    </StyledDiv1>
   );
 }
 
-const StyledDiv = styled.div`
+const StyledDiv1 = styled.div`
   border-radius: 50px;
   border: 10px solid #d6700a;
   background-color: purple;
@@ -45,10 +57,53 @@ const CenterImage = styled.div`
     border-radius: 10px;
   }
 
-  .register-button {
-    background-color: #d6700a;
-    color: white;
-    border-radius: 10px;
+  .button-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 20px;
   }
 `;
+
+const StyledDiv2 = styled.div`
+  text-align: center;
+  font: 600 20px/60% Anek Latin, sans-serif;
+  background-color: purple;
+  color: white;
+  padding: 10px;
+`;
+
+const Div2 = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #d6700a;
+  margin-top: 10px;
+  border-radius: 10px;
+`;
+
+const Div3 = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #d6700a;
+`;
+
+const Styledbutton = styled.button`
+  color: white;
+  border: none;
+  background: none;
+`;
+
+
+const StyledText = styled.div`
+  color: white;
+  font: 600 20px Inter, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+`;
+
+
 export default InfoPage;
