@@ -26,7 +26,6 @@ function InfoPage() {
 }
 
 const StyledDiv1 = styled.div`
-  border-radius: 50px;
   border: 10px solid #d6700a;
   background-color: purple;
   display: flex;
