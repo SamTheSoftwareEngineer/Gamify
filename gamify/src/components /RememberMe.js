@@ -6,7 +6,6 @@ const Login = () => {
 
   const handleLogin = () => {
     // Perform login logic
-
     if (rememberMe) {
       localStorage.setItem("rememberMe", "true");
     } else {
