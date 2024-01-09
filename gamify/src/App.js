@@ -1,8 +1,7 @@
 import InfoPage from './components /InfoPage';
-import LoginPage from './components /LoginPage';
+import SignUpPage from './components /SignUpPage';
 import NavBar from './components /NavBar';
 import React, { useEffect } from 'react';
-import Login from './components /RememberMe';
 
 function App() {
 
@@ -11,7 +10,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <LoginPage />
+      <SignUpPage />
     </div>
   );
 }
