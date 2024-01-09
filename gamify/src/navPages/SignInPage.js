@@ -76,20 +76,26 @@ function SignInPage() {
 const PageWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   background-image: linear-gradient(purple, blue);
-  height: 100vh;
+  height: 175vh;
+  padding-top: 150px;
 
   & h1 {
     color: white;
+    margin-right: 10px;
+    margin-top: 200px;
+    padding-left: 30px;
+    white-space: nowrap;
   }
 `;
 
 const StyledBox = styled.div`
-  height: 770px;
-  width: 771px;
+  height: 400px;
+  width: 400x;
   margin: 10px;
+  margin-top: -100px;
 
   & .rectangle {
     background-color: #fce0c5;
@@ -97,10 +103,10 @@ const StyledBox = styled.div`
     border-color: #d6700a;
     border-radius: 50px;
     height: 770px;
-    left: 0;
+    left: 10;
     position: flex;
     top: 0;
-    width: 771px;
+    width: 770px;
   }
 
   & .forgetWrapper {
