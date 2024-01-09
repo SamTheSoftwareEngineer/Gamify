@@ -15,12 +15,13 @@ function InfoPage() {
 
       <StyledDiv2>
       <Div2>
-        <Styledbutton a href="/register">REGISTER</Styledbutton></Div2>
+        <StyledButton a href="/register">REGISTER</StyledButton>
+      </Div2>
       <Div3>
-        <Styledbutton a href="/login">LOGIN</Styledbutton>
+        <StyledButton a href="/login">LOGIN</StyledButton>
       </Div3>
     </StyledDiv2>
-      
+
     </StyledDiv1>
   );
 }
@@ -32,6 +33,7 @@ const StyledDiv1 = styled.div`
   min-height: 811px;
   flex-direction: column;
   align-items: center;
+  border-radius: 50px;
 `;
 
 const LevelUpYourReality = styled.div`
@@ -48,7 +50,7 @@ const LevelUpYourReality = styled.div`
 const CenterImage = styled.div`
   max-width: 90%;
   margin-top: 50px;
-  
+
 
   .keyboard {
     width: 100%;
@@ -66,11 +68,14 @@ const CenterImage = styled.div`
 `;
 
 const StyledDiv2 = styled.div`
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
   font: 600 20px/60% Anek Latin, sans-serif;
   background-color: purple;
   color: white;
   padding: 10px;
+  width: 40%;
 `;
 
 const Div2 = styled.div`
@@ -89,7 +94,7 @@ const Div3 = styled.div`
   background-color: #d6700a;
 `;
 
-const Styledbutton = styled.button`
+const StyledButton = styled.button`
   color: white;
   border: none;
   background: none;

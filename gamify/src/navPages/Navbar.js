@@ -6,7 +6,8 @@ const Div = styled.div`
   background-color: purple;
   color: white;
   padding: 10px;
-  
+  border-bottom: 5px solid white;
+
 
   .container {
   min-height: 130px;
