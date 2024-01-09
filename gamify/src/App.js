@@ -1,16 +1,16 @@
-import InfoPage from './components /InfoPage';
-import SignUpPage from './components /SignUpPage';
-import NavBar from './components /NavBar';
-import React, { useEffect } from 'react';
+// import InfoPage from './navPages/InfoPage';
+import SignInPage from './navPages/SignInPage';
+import NavBar from './navPages/Navbar.js';
+import React from 'react';
 
 function App() {
 
-  // Application content 
-  
+  // Application content
+
   return (
     <div>
       <NavBar />
-      <SignUpPage />
+      <SignInPage />
     </div>
   );
 }
