@@ -23,7 +23,7 @@ function RegisterPage() {
   return (
   <PageWrapper>
     <div>
-      <h1>UNLEASH YOUR POTENTIAL.</h1>
+      <h1>LET'S GET STARTED.</h1>
     </div>
     <StyledBox>
       <div className="rectangle">
@@ -59,6 +59,9 @@ function RegisterPage() {
           </PasswordWrapper>
           <div>
             <button type="submit" className="RegisterButton">REGISTER</button>
+          </div>
+          <div>
+            <p>Already have an account? <a href="/login">Login</a></p>
           </div>
         </form>
           </div>
