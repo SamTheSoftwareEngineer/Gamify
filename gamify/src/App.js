@@ -2,6 +2,7 @@
 import SignInPage from './navPages/SignInPage';
 import NavBar from './navPages/Navbar.js';
 import React from 'react';
+import RegisterPage from './navPages/RegisterPage.js';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <SignInPage />
+      < RegisterPage />
     </div>
   );
 }
