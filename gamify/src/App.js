@@ -3,7 +3,7 @@ import SignInPage from './navPages/SignInPage';
 import NavBar from './navPages/Navbar.js';
 import React from 'react';
 import RegisterPage from './navPages/RegisterPage.js';
-
+import AvatarPage from './navPages/AvatarPage.js';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <RegisterPage />
+      <AvatarPage />
     </div>
   );
 }
