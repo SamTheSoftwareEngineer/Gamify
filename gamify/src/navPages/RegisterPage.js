@@ -30,7 +30,7 @@ function RegisterPage() {
         <form>
           <UsernameWrapper>
             <label>
-              Enter Your Username:
+              Create Your Username:
             </label>
             <div className="usernameWrapper">
               <input type="username" name="username" placeholder="Username" />
@@ -38,7 +38,7 @@ function RegisterPage() {
           </UsernameWrapper>
           <PasswordWrapper>
             <label>
-              Enter Your Password:
+              Create Your Password:
             </label>
             <div>
               <input
@@ -47,6 +47,13 @@ function RegisterPage() {
                 placeholder="Password"
                 />
                 <span onClick={handleToggle}><Icon icon={icon} size={25}/></span>
+            </div>
+            <div>
+              <input
+                type={type}
+                name="password"
+                placeholder="Confirm Password"
+                />
             </div>
           </PasswordWrapper>
           <div>
