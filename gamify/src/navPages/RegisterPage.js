@@ -54,6 +54,7 @@ function RegisterPage() {
                 name="password"
                 placeholder="Confirm Password"
                 />
+                <span onClick={handleToggle}><Icon icon={icon} size={25}/></span>
             </div>
           </PasswordWrapper>
           <div>
