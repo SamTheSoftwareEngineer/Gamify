@@ -57,6 +57,24 @@ function RegisterPage() {
                 <span onClick={handleToggle}><Icon icon={icon} size={25}/></span>
             </div>
           </PasswordWrapper>
+          <UserBirthDateWrapper>
+            <label>
+              What is your date of birth?
+            </label>
+            <div className="dateofbirth">
+              <input type="date" name="dateofbirth" />
+            </div>
+          </UserBirthDateWrapper>
+          <PersonalInfoWrapper>
+            <label>
+              What is your gender?
+            </label>
+            <div>
+              <input type="radio" name="gender" value="male" /> Male
+              <input type="radio" name="gender" value="female" /> Female
+              <input type="radio" name="gender" value="other" /> Other
+            </div>
+            </PersonalInfoWrapper>
           <div>
             <button type="submit" className="RegisterButton">REGISTER</button>
           </div>
@@ -76,7 +94,7 @@ const PageWrapper = styled.div`
   align-items: flex-start;
   background-image: linear-gradient(purple, blue);
   height: 175vh;
-  padding-top: 150px;
+  padding-top: 250px;
 
   & h1 {
     color: white;
@@ -202,6 +220,63 @@ const PasswordWrapper = styled.div`
 
 
 const UsernameWrapper = styled.div`
+  margin: 10px;
+  margin-top: 200px;
+& label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+& div {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 30px;
+  background-color: white;
+  padding: 5px;
+
+  & input {
+    width: 300px;
+    height: 20px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+}
+`;
+
+const PersonalInfoWrapper = styled.div`
+  margin: 10px;
+
+  & label {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  & div {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    padding: 5px;
+    align-items: center;
+
+    & input {
+      /* border: none; */
+      border: none;
+      background-color: transparent;
+      outline: none;
+      text-align: center;
+      align-items: center;
+
+    }
+  }
+`;
+
+
+const UserBirthDateWrapper = styled.div`
   margin: 10px;
 
 & label {

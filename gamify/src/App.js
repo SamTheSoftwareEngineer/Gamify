@@ -4,6 +4,7 @@ import NavBar from './navPages/Navbar.js';
 import React from 'react';
 import RegisterPage from './navPages/RegisterPage.js';
 
+
 function App() {
 
   // Application content
@@ -11,7 +12,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      < RegisterPage />
+      <RegisterPage />
     </div>
   );
 }
