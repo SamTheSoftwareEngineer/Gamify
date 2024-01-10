@@ -73,10 +73,11 @@ function RegisterPage() {
               <input type="radio" name="gender" value="male" /> Male
               <input type="radio" name="gender" value="female" /> Female
               <input type="radio" name="gender" value="other" /> Other
+              <input type="radio" name="gender" value="none" /> None
             </div>
             </PersonalInfoWrapper>
           <div>
-            <button type="submit" className="RegisterButton">REGISTER</button>
+            <button type="submit" className="RegisterButton">Create Account</button>
           </div>
           <div>
             <p>Already have an account? <a href="/login">Login</a></p>
