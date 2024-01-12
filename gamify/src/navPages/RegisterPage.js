@@ -144,53 +144,6 @@ const StyledBox = styled.div`
   }
 `;
 
-const StyledLabel = styled.label`
-  padding-top: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-
-  & span {
-    font-size: 18px;
-    font-weight: 700;
-  }
-  `;
-
-const StyledSwitch = styled.div`
-    position: relative;
-    width: 53px;
-    height: 20px;
-    background-color: #b3b3b3;
-    border-radius: 32px;
-    padding: 4px;
-    transition: 300ms all;
-
-    &:before {
-      transition: 300ms all;
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      border-radius: 35px;
-      top: 50%;
-      left: 4px;
-      background: white;
-      transform: translate(0, -50%);
-    };
-`;
-
-const StyledInput = styled.input`
-  display: none;
-
-  &:checked + ${StyledSwitch} {
-    background: green;
-
-    &:before {
-      transform: translate(32px, -50%);
-    }
-  }
-`;
 
 const PasswordWrapper = styled.div`
   margin: 10px;
